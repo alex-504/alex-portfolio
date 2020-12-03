@@ -17,10 +17,10 @@
     <%= favicon_tag 'favicon.ico' %>
     <%= stylesheet_link_tag "app" %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <%= partial 'partials/navbar' %>
   </head>
 
   <body>
-    <%= partial 'partials/card' %>
     <%= yield %>
     <%= javascript_include_tag "bundle" %>
   </body>
